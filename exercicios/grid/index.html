@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            background-color: #f5dcf3;
+        }
+
+        section {
+            background-color: #eaffbd;
+        }
+
+        nav {
+            background-color: #99d8ff;
+        }
+
+        header {
+            background-color: #fbd4d4;
+        }
+
+        article {
+            background-color: aquamarine;
+        }
+
+        .grid-wrapper>* {
+            min-height: 100px;
+            border-radius: 4px;
+
+            display: flex;
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-template-rows: repeat(4, auto) ;
+            grid-template-columns: 240px 1fr;
+            gap: 1rem;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            grid-row: 1;
+        }
+
+        nav {
+            grid-row: 2 / -2;
+        }
+
+        section {
+            grid-column: 2 / -1;
+        }
+
+        footer {
+            grid-column: 1 / -1;
+            grid-row: -2 / -1;
+        }
+
+        .grid-wrapper>main {
+            background-color: #ccc;
+            display: grid;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        article {
+            min-height: 100px;
+            border-radius: 4px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-wrapper">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <section>section</section>
+        <main>
+        <article>article</article>
+        <article>article</article>
+        <article>article</article>
+        <article>article</article>
+        <article>article</article>
+         <article>article</article>
+        <article>article</article>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

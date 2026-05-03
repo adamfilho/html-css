@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1#principal {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+}
+
+.maior {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+}
+
+.medio {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aquamarine;
+}
+
+.menor {
+    font-family: 'Courier New', Courier, monospace;
+    color: cadetblue;
+}
+
+p {
+    font-family: monospace;
+}
+
+p#diferente {
+    font-family: cursive;
+}
