@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes moverEColorir {
+  0% {
+    transform: translateX(0);
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+    border-radius: 50%; /* Fica circular */
+  }
+  100% {
+    transform: translateX(300px);
+    background-color: yellow;
+  }
+}
+        .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: moverEColorir; /* Nome do keyframe */
+  animation-duration: 4s;       /* Tempo total */
+  animation-iteration-count: infinite; /* Repetir para sempre */
+}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
